@@ -1,0 +1,101 @@
+/* 
+ESERCIZIO 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron
+ESERCIZIO 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar
+ESERCIZIO 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron
+ESERCIZIO 4) Crea un selettore per selezionare il primo blog post
+ESERCIZIO 5) Crea un selettore per selezionare l'<hr> del primo blog post e colorarlo di rosso
+ESERCIZIO 6) Crea un selettore per selezionare i link pari della navbar
+ESERCIZIO 7) Crea un selettore per selezionare tutti gli <li> della prima "ordered-list" della sidebar ("Archivio")
+ESERCIZIO 8) Crea un selettore per selezionare l'autore del secondo blog post
+ESERCIZIO 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post
+ESERCIZIO 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra
+ESERCIZIO 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso
+ESERCIZIO 12) Crea un selettore per selezionare il secondo link del footer
+*/
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+/* 1 */
+
+.jumbotron h1 {
+  color: yellow;
+}
+
+/* 2 */
+
+.nav > * {
+  color: red;
+}
+
+/* 3 */
+
+.jumbotron a {
+  color: green;
+}
+
+/* 4 */
+
+.blog-post:first-of-type {
+  border: 1px solid blue;
+}
+
+/* 5 */
+
+.blog-post:first-of-type hr {
+  background-color: red;
+}
+
+/* 6 */
+
+.nav > span:nth-child(even) {
+  color: green;
+}
+
+/* 7 */
+
+aside div:nth-of-type(2) ol li a {
+  color: darkmagenta;
+}
+
+/* 8 */
+
+.blog-post:nth-of-type(2) p:first-of-type a {
+  color: pink;
+}
+
+/* 9 */
+
+.blog-post:nth-of-type(3) ul li:nth-child(2) {
+  color: gold;
+}
+
+/* 10 */
+
+footer + a {
+  color: aqua;
+}
+
+/* 11 */
+
+.blog-post:nth-of-type(3) + nav .btn:nth-child(2) {
+  border-color: blue;
+}
+
+/* 12 */
+
+footer a:nth-of-type(2) {
+  color: red;
+}
