@@ -194,7 +194,7 @@
 
       <div class="container my-5">
         <h3>Recommended to you</h3>
-        <div id="carouselExample" class="carousel slide">
+        <div id="carouselExample" class="carousel slide d-none d-md-block">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
@@ -684,11 +684,277 @@
             <!-- <span class="visually-hidden">Next</span> -->
           </button>
         </div>
+
+        <div
+          id="carouselExample-mobile"
+          class="carousel slide d-block d-md-none"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <div
+                    class="card col-6 col-md-3 border-0 shadow-sm my-1"
+                    style="width: 100%"
+                  >
+                    <img
+                      src="assets/course-graphql.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        GraphQL: introduction to graphQL for beginners
+                      </h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <i class="bi bi-star"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                        <p class="vote">2.5</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-javascript.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-laravel.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev shadow-sm"
+            type="button"
+            data-bs-target="#carouselExample-mobile"
+            data-bs-slide="prev"
+          >
+            <i class="bi bi-caret-left"></i>
+            <!-- <span class="visually-hidden">Previous</span> -->
+          </button>
+          <button
+            class="carousel-control-next shadow-sm"
+            type="button"
+            data-bs-target="#carouselExample-mobile"
+            data-bs-slide="next"
+          >
+            <i class="bi bi-caret-right"></i>
+            <!-- <span class="visually-hidden">Next</span> -->
+          </button>
+        </div>
       </div>
 
       <div class="container my-5">
         <h3>Most Popular</h3>
-        <div id="carouselExample2" class="carousel slide">
+        <div id="carouselExample2" class="carousel slide d-none d-md-block">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
@@ -1173,11 +1439,272 @@
             <!-- <span class="visually-hidden">Next</span> -->
           </button>
         </div>
+
+        <div
+          id="carouselExample2-mobile"
+          class="carousel slide d-block d-md-none"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-html.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-javascript.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-react.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev shadow-sm"
+            type="button"
+            data-bs-target="#carouselExample2-mobile"
+            data-bs-slide="prev"
+          >
+            <i class="bi bi-caret-left"></i>
+            <!-- <span class="visually-hidden">Previous</span> -->
+          </button>
+          <button
+            class="carousel-control-next shadow-sm"
+            type="button"
+            data-bs-target="#carouselExample2-mobile"
+            data-bs-slide="next"
+          >
+            <i class="bi bi-caret-right"></i>
+            <!-- <span class="visually-hidden">Next</span> -->
+          </button>
+        </div>
       </div>
 
       <div class="container my-5">
         <h3>Trending</h3>
-        <div id="carouselExample3" class="carousel slide">
+        <div id="carouselExample3" class="carousel slide d-none d-md-block">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="row">
@@ -1656,6 +2183,267 @@
             class="carousel-control-next shadow-sm"
             type="button"
             data-bs-target="#carouselExample3"
+            data-bs-slide="next"
+          >
+            <i class="bi bi-caret-right"></i>
+            <!-- <span class="visually-hidden">Next</span> -->
+          </button>
+        </div>
+
+        <div
+          id="carouselExample3-mobile"
+          class="carousel slide d-block d-md-none"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-gatsby.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-html.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6 col-md-3">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-node.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-6 col-md-3">
+                  <div class="card border-0 shadow-sm my-1" style="width: 100%">
+                    <img
+                      src="assets/course-laravel.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title">Card title</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item border-0">
+                        <div class="duration-level">
+                          <div class="time">
+                            <i class="bi bi-clock"></i>
+                            <p>2h 40m</p>
+                          </div>
+                          <div class="level">
+                            <i class="bi bi-bar-chart-fill"></i>
+                            <p>Advance</p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <div class="stars-item">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="vote">5.0</p>
+                        <p class="votes-num">(1,500)</p>
+                      </li>
+                      <li class="list-group-item border-0">
+                        <p class="fs-5 fw-bold">$ 500</p>
+                        <p class="fs-6 text-decoration-line-through">$600</p>
+                      </li>
+                    </ul>
+                    <div class="card-body border-top">
+                      <a href="#" class="card-link text-decoration-none">
+                        <img
+                          src="assets/avatar-5.jpg"
+                          alt=""
+                          height="40"
+                          width="40"
+                          class="rounded-circle"
+                        />
+                        <p class="m-0">Brooklyn Simmons</p>
+                      </a>
+                      <a href="#" class="card-link text-decoration-none">
+                        <i class="bi bi-bookmark fw-bold fs-5"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev shadow-sm"
+            type="button"
+            data-bs-target="#carouselExample3-mobile"
+            data-bs-slide="prev"
+          >
+            <i class="bi bi-caret-left"></i>
+            <!-- <span class="visually-hidden">Previous</span> -->
+          </button>
+          <button
+            class="carousel-control-next shadow-sm"
+            type="button"
+            data-bs-target="#carouselExample3-mobile"
             data-bs-slide="next"
           >
             <i class="bi bi-caret-right"></i>
@@ -1692,6 +2480,6 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
   </body>
 </html>

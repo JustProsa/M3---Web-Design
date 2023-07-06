@@ -1,16 +1,14 @@
-let navbarDropDowns = document.querySelectorAll(
-  "nav:first-of-type ul:first-child li.dropdown"
-);
+let bookmarks = document.querySelectorAll(".card .card-body:last-child a i");
 
-navbarDropDowns.forEach(function (dropdown) {
-  let dropDownMenu = dropdown.querySelector("div.dropdown-menu");
-  dropdown.addEventListener("click", function () {
-    if (dropdown.classList.contains("show")) {
-      dropdown.classList.remove("show");
-      dropDownMenu.classList.remove("show");
+bookmarks.forEach(function (bookmark) {
+  bookmark.addEventListener("click", function () {
+    event.preventDefault();
+    if (bookmark.classList.contains("bi-bookmark-fill")) {
+      bookmark.classList.remove("bi-bookmark-fill");
+      bookmark.classList.add("bi-bookmark");
     } else {
-      dropdown.classList.add("show");
-      dropDownMenu.classList.add("show");
+      bookmark.classList.add("bi-bookmark-fill");
+      bookmark.classList.remove("bi-bookmark");
     }
   });
 });
