@@ -1,0 +1,69 @@
+div.txt {
+  border: 1px solid black;
+  width: 250px;
+  height: 125px;
+
+  /* TEXT ELLIPSIS */
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
+
+  /* TEXT CLAMP */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden
+
+}
+
+.custom-mw {
+  max-width: 80px;
+}
+
+#carouselExampleIndicators {
+  height: 50vh;
+}
+
+#carouselExampleIndicators .carousel-inner,
+#carouselExampleIndicators .carousel-inner,
+#carouselExampleIndicators .carousel-item img {
+  height: 100%;
+}
+
+#carouselExampleIndicators .carousel-item img {
+  object-fit: cover;
+  object-position: center;
+}
+
+.carousel-indicators button.custom-indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.card-cnt {
+  position: relative;
+
+}
+
+.card-cnt span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  background-color: rgb(13, 110, 253);
+  color: white;
+  padding: 3px 10px 3px 2px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border: 5px solid #212529;
+  border-left: none;
+  display: flex;
+  align-items: center;
+  transform: translateY(-5px);
+  font-size: 12px;
+
+}
+
+
+
