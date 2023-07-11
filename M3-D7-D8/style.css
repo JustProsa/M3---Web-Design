@@ -13,6 +13,12 @@ main {
   min-height: 100vh;
 }
 
+footer {
+  padding-left: 5%;
+  padding-right: 5%;
+  overflow-x: hidden;
+}
+
 .navbar-brand img {
   width: 150px;
 }
@@ -21,50 +27,73 @@ nav form button:last-of-type img {
   width: 50px;
 }
 
-.movie-row {
+.dropdown-menu .dropdown-item:hover {
+  background-color: transparent !important;
+}
+
+.dropdown-menu-left {
+  right: 0 !important;
+  left: auto !important;
+}
+
+/* .movie-row {
   position: relative;
-}
+} */
 
-.movie-row {
-  overflow-x: auto;
-}
+/* .movie-row div.row {
+  overflow-x: hidden;
+} */
 
-.movie-row::-webkit-scrollbar {
+.movie-row div.row::-webkit-scrollbar {
   display: none;
+  z-index: 0;
 }
 
-.movie-row img {
-  width: 100%;
+.movie-row div.row div {
   transition: all 0.3s;
 }
 
-.movie-row img:hover {
-  transform: scale(1.1);
-  z-index: 9;
+.movie-row div.row div:nth-child(7) {
+  opacity: 0.4;
 }
 
+.movie-row div.row div:hover {
+  transform: scale(1.1);
+  z-index: 9;
+  cursor: pointer;
+}
+
+.movie-row div.row div img {
+  width: 100%;
+}
+
+.scrollButtons {
+  margin-top: 0.4rem;
+}
 .scrollLeft {
   width: 50px;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: 0%;
-  top: 0%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: all 0.3s;
+}
+
+.scrollLeft:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.scrollRight:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 .scrollRight {
   width: 50px;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  right: 0%;
-  top: 0%;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: all 0.3s;
+}
+
+footer ul {
+  list-style: none !important;
+  padding: 0;
 }
