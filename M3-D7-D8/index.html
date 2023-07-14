@@ -49,7 +49,14 @@
             </li>
           </ul>
           <form class="d-flex" role="search">
-            <button class="btn text-light fs-5" type="button">
+            <input
+              class="form-control me-2 invisible"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+              id="search-bar"
+            />
+            <button class="btn text-light fs-5" type="button" id="search-btn">
               <ion-icon name="search-outline"></ion-icon>
             </button>
             <button class="btn text-light" type="button">KIDS</button>
@@ -63,7 +70,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                <img src="assets/imgs/avatar.png" alt="" />
+                <img src="assets/imgs/Pietro-img.jpg" alt="" />
               </button>
               <ul
                 class="dropdown-menu bg-dark text-light border-light dropdown-menu-left"
@@ -83,10 +90,6 @@
                 </li>
               </ul>
             </div>
-
-            <!-- <button class="btn text-light" type="button">
-              <img src="assets/imgs/avatar.png" alt="" />
-            </button> -->
           </form>
         </div>
       </div>
@@ -131,7 +134,7 @@
         </div>
       </section>
 
-      <section class="mb-5">
+      <section class="mb-5 movie-row-container">
         <h2 class="fs-3 text-light">Trending now</h2>
         <div class="movie-row">
           <div class="row flex-nowrap row g-2">
@@ -179,23 +182,16 @@
             </div>
           </div>
 
-          <div
-            class="scrollButtons d-flex justify-content-between align-content-center"
-          >
-            <div class="scrollLeft">
-              <ion-icon name="chevron-back" class="fs-2 text-light"></ion-icon>
-            </div>
-            <div class="scrollRight">
-              <ion-icon
-                name="chevron-forward"
-                class="fs-2 text-light"
-              ></ion-icon>
-            </div>
+          <div class="arrow-left bg-dark rounded-circle">
+            <ion-icon name="chevron-back" class="fs-2 text-light"></ion-icon>
+          </div>
+          <div class="arrow-right bg-dark rounded-circle">
+            <ion-icon name="chevron-forward" class="fs-2 text-light"></ion-icon>
           </div>
         </div>
       </section>
 
-      <section class="mb-5">
+      <section class="mb-5 movie-row-container">
         <h2 class="fs-3 text-light">Watch it again</h2>
         <div class="movie-row">
           <div class="row flex-nowrap row g-1">
@@ -243,23 +239,16 @@
             </div>
           </div>
 
-          <div
-            class="scrollButtons d-flex justify-content-between align-content-center"
-          >
-            <div class="scrollLeft">
-              <ion-icon name="chevron-back" class="fs-2 text-light"></ion-icon>
-            </div>
-            <div class="scrollRight">
-              <ion-icon
-                name="chevron-forward"
-                class="fs-2 text-light"
-              ></ion-icon>
-            </div>
+          <div class="arrow-left bg-dark rounded-circle">
+            <ion-icon name="chevron-back" class="fs-2 text-light"></ion-icon>
+          </div>
+          <div class="arrow-right bg-dark rounded-circle">
+            <ion-icon name="chevron-forward" class="fs-2 text-light"></ion-icon>
           </div>
         </div>
       </section>
 
-      <section class="mb-5">
+      <section class="mb-5 movie-row-container">
         <h2 class="fs-3 text-light">New Releases</h2>
         <div class="movie-row">
           <div class="row flex-nowrap g-1">
@@ -307,18 +296,182 @@
             </div>
           </div>
 
-          <div
-            class="scrollButtons d-flex justify-content-between align-content-center"
-          >
-            <div class="scrollLeft">
-              <ion-icon name="chevron-back" class="fs-2 text-light"></ion-icon>
+          <div class="arrow-left bg-dark rounded-circle">
+            <ion-icon name="chevron-back" class="fs-2 text-light"></ion-icon>
+          </div>
+          <div class="arrow-right bg-dark rounded-circle">
+            <ion-icon name="chevron-forward" class="fs-2 text-light"></ion-icon>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5 movie-row-container">
+        <h2 class="fs-3 text-light">Trending now</h2>
+        <div class="movie-row">
+          <div class="row flex-nowrap row g-2">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/1.png" alt="" />
             </div>
-            <div class="scrollRight">
-              <ion-icon
-                name="chevron-forward"
-                class="fs-2 text-light"
-              ></ion-icon>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/2.png" alt="" />
             </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/3.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/4.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/5.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/6.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/7.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/1.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/2.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/3.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/4.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/5.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/6.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/7.png" alt="" />
+            </div>
+          </div>
+
+          <div class="arrow-left bg-dark rounded-circle">
+            <ion-icon name="chevron-back" class="fs-2 text-light"></ion-icon>
+          </div>
+          <div class="arrow-right bg-dark rounded-circle">
+            <ion-icon name="chevron-forward" class="fs-2 text-light"></ion-icon>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5 movie-row-container">
+        <h2 class="fs-3 text-light">Watch it again</h2>
+        <div class="movie-row">
+          <div class="row flex-nowrap row g-1">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/8.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/9.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/10.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/11.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/12.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/13.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/14.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/8.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/9.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/10.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/11.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/12.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/13.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/14.png" alt="" />
+            </div>
+          </div>
+
+          <div class="arrow-left bg-dark rounded-circle">
+            <ion-icon name="chevron-back" class="fs-2 text-light"></ion-icon>
+          </div>
+          <div class="arrow-right bg-dark rounded-circle">
+            <ion-icon name="chevron-forward" class="fs-2 text-light"></ion-icon>
+          </div>
+        </div>
+      </section>
+
+      <section class="mb-5 movie-row-container">
+        <h2 class="fs-3 text-light">New Releases</h2>
+        <div class="movie-row">
+          <div class="row flex-nowrap g-1">
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/15.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/16.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/17.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/18.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/4.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/6.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/9.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/15.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/16.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/17.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/18.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/4.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/6.png" alt="" />
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+              <img src="assets/imgs/movies/9.png" alt="" />
+            </div>
+          </div>
+
+          <div class="arrow-left bg-dark rounded-circle">
+            <ion-icon name="chevron-back" class="fs-2 text-light"></ion-icon>
+          </div>
+          <div class="arrow-right bg-dark rounded-circle">
+            <ion-icon name="chevron-forward" class="fs-2 text-light"></ion-icon>
           </div>
         </div>
       </section>
@@ -328,101 +481,93 @@
       <div class="w-50 mx-auto">
         <div class="row">
           <div class="col-12">
-            <button class="btn text-light border-none me-1 p-0 fs-4">
+            <button class="btn text-light border-none p-0 fs-4">
               <ion-icon name="logo-facebook"></ion-icon>
             </button>
-            <button class="btn text-light border-none mx-1 fs-4">
+            <button class="btn text-light border-none p-0 fs-4">
               <ion-icon name="logo-instagram"></ion-icon>
             </button>
-            <button class="btn text-light border-none mx-1 fs-4">
+            <button class="btn text-light border-none p-0 fs-4">
               <ion-icon name="logo-twitter"></ion-icon>
             </button>
-            <button class="btn text-light border-none mx-1 fs-4">
+            <button class="btn text-light border-none p-0 fs-4">
               <ion-icon name="logo-youtube"></ion-icon>
             </button>
           </div>
 
-          <div class="col-3">
+          <div class="col-12 col-md-3">
             <ul>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
+                <a href="#" class="text-light text-decoration-none"
                   >Audio and subtitles</a
                 >
               </li>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
+                <a href="#" class="text-light text-decoration-none"
                   >Media center</a
                 >
               </li>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
-                  >Privacy</a
-                >
+                <a href="#" class="text-light text-decoration-none">Privacy</a>
               </li>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
+                <a href="#" class="text-light text-decoration-none"
                   >Contact us</a
                 >
               </li>
             </ul>
           </div>
 
-          <div class="col-3">
+          <div class="col-12 col-md-3">
             <ul>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
+                <a href="#" class="text-light text-decoration-none"
                   >Audio and subtitles</a
                 >
               </li>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
+                <a href="#" class="text-light text-decoration-none"
                   >Media center</a
                 >
               </li>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
-                  >Privacy</a
-                >
+                <a href="#" class="text-light text-decoration-none">Privacy</a>
               </li>
             </ul>
           </div>
 
-          <div class="col-3">
+          <div class="col-12 col-md-3">
             <ul>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
+                <a href="#" class="text-light text-decoration-none"
                   >Audio and subtitles</a
                 >
               </li>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
+                <a href="#" class="text-light text-decoration-none"
                   >Media center</a
                 >
               </li>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
-                  >Privacy</a
-                >
+                <a href="#" class="text-light text-decoration-none">Privacy</a>
               </li>
             </ul>
           </div>
 
-          <div class="col-3">
+          <div class="col-12 col-md-3">
             <ul>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
+                <a href="#" class="text-light text-decoration-none"
                   >Audio and subtitles</a
                 >
               </li>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
+                <a href="#" class="text-light text-decoration-none"
                   >Media center</a
                 >
               </li>
               <li class="mb-1">
-                <a href="#" class="text-light text-decoration-none fs-6"
-                  >Privacy</a
-                >
+                <a href="#" class="text-light text-decoration-none">Privacy</a>
               </li>
             </ul>
           </div>

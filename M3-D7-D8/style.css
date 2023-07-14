@@ -6,6 +6,15 @@
   background-color: #141414 !important;
 }
 
+.invisible {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.visible {
+  opacity: 1;
+}
+
 main {
   padding-left: 5%;
   padding-right: 5%;
@@ -23,6 +32,11 @@ footer {
   width: 150px;
 }
 
+#search-bar {
+  height: 50% !important;
+  align-self: center !important;
+}
+
 nav form button:last-of-type img {
   width: 50px;
 }
@@ -36,26 +50,37 @@ nav form button:last-of-type img {
   left: auto !important;
 }
 
-/* .movie-row {
+/* .movie-row-container {
+  transition: all 0.5s ease;
+  opacity: 0.2;
+}
+
+.movie-row-container.visible {
+  opacity: 1;
+} */
+
+.movie-row {
   position: relative;
-} */
+}
 
-/* .movie-row div.row {
-  overflow-x: hidden;
-} */
+.movie-row div.row {
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+  scroll-behavior: smooth;
+}
 
-.movie-row div.row::-webkit-scrollbar {
+/* .movie-row div.row::-webkit-scrollbar {
   display: none;
   z-index: 0;
-}
+} */
 
 .movie-row div.row div {
   transition: all 0.3s;
 }
 
-.movie-row div.row div:nth-child(7) {
+/* .movie-row div.row div:nth-child(7) {
   opacity: 0.4;
-}
+} */
 
 .movie-row div.row div:hover {
   transform: scale(1.1);
@@ -67,30 +92,60 @@ nav form button:last-of-type img {
   width: 100%;
 }
 
-.scrollButtons {
-  margin-top: 0.4rem;
-}
-.scrollLeft {
+/* .scrollButtons {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+} */
+
+.arrow-left {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
   width: 50px;
-  height: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
 
   transition: all 0.3s;
+  z-index: 10;
 }
 
-.scrollLeft:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
-.scrollRight:hover {
-  cursor: pointer;
-  transform: scale(1.2);
-}
-
-.scrollRight {
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
   width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
 
   transition: all 0.3s;
+  z-index: 10;
+}
+
+.arrow-left:hover {
+  cursor: pointer;
+  transform: scale(1.2) translateY(-40%);
+  opacity: 0.8;
+}
+
+.arrow-right:hover {
+  cursor: pointer;
+  transform: scale(1.2) translateY(-40%);
+  opacity: 0.8;
 }
 
 footer ul {
