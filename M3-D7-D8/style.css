@@ -67,20 +67,12 @@ nav form button:last-of-type img {
   transition: all 0.3s ease-in-out;
   width: fit-content;
   scroll-behavior: smooth;
+  position: relative;
 }
-
-/* .movie-row div.row::-webkit-scrollbar {
-  display: none;
-  z-index: 0;
-} */
 
 .movie-row div.row div {
-  transition: all 0.3s;
+  transition: all 0.3s !important;
 }
-
-/* .movie-row div.row div:nth-child(7) {
-  opacity: 0.4;
-} */
 
 .movie-row div.row div:hover {
   transform: scale(1.1);
@@ -91,18 +83,6 @@ nav form button:last-of-type img {
 .movie-row div.row div img {
   width: 100%;
 }
-
-/* .scrollButtons {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%);
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  z-index: 10;
-} */
 
 .arrow-left {
   position: absolute;

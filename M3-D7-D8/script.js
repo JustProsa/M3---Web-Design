@@ -1,3 +1,4 @@
+// Bottone di ricerca che attiva e disattiva la barra
 const searchBtn = document.getElementById("search-btn");
 const searchBar = document.getElementById("search-bar");
 
@@ -11,6 +12,8 @@ searchBtn.addEventListener("click", function () {
   }
 });
 
+//Scorrimento destra e sinistra immagini dei film !!NON FUNZIONA
+
 let movieRows = Array.from(document.querySelectorAll(".movie-row div.row"));
 let arrowsLeft = Array.from(document.getElementsByClassName("arrow-left"));
 let arrowsRight = Array.from(document.getElementsByClassName("arrow-right"));
@@ -20,19 +23,21 @@ console.log(arrowsRight);
 
 for (let i = 0; i < movieRows.length; i++) {
   arrowsLeft[i].addEventListener("click", function () {
-    movieRows[i].scrollTo({
-      left: 100,
-      behavior: "smooth",
-    });
+    let currentPosition = parseInt(movieRows[i].style.left) || 0;
+    let newPosition = currentPosition + 100; // Sposta l'elemento di 100px verso destra
+    movieRows[i].style.left = newPosition + "px";
+    console.log(newPosition);
   });
 
   arrowsRight[i].addEventListener("click", function () {
-    movieRows[i].scrollTo({
-      left: -100,
-      behavior: "smooth",
-    });
+    let currentPosition = parseInt(movieRows[i].style.left) || 0;
+    let newPosition = currentPosition - 100; // Sposta l'elemento di 100px verso sinistra
+    movieRows[i].style.left = newPosition + "px";
+    console.log(newPosition);
   });
 }
+
+//Modifica l'opacità delle immagini se sono parzialmente fuori dalla finestra di visualizzazione
 
 function updateOpacity() {
   const movieCards = document.querySelectorAll(".movie-row div.row div");
@@ -45,8 +50,26 @@ function updateOpacity() {
 
     if (isFullyVisible) {
       card.style.opacity = "1";
+      card.style.transition = "opacity 0.3s ease";
     } else {
       card.style.opacity = "0.4";
+      card.style.transition = "opacity 0.3s ease";
+    }
+  }
+
+  const allElements = document.querySelectorAll(".movie-row-container");
+
+  for (let i = 0; i < allElements.length; i++) {
+    const element = allElements[i];
+    const rect = element.getBoundingClientRect();
+    const isFullyVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+
+    if (isFullyVisible) {
+      element.style.opacity = "1";
+      element.style.transition = "opacity 0.3s ease";
+    } else {
+      element.style.opacity = "0.4";
+      element.style.transition = "opacity 0.3s ease";
     }
   }
 }
